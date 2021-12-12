@@ -8,7 +8,7 @@ body {
 }
 
 header {
-	padding-bottom: 18rem;
+	padding-bottom: 20rem;
 	background-image: url("images/pixelated-sunset.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -21,11 +21,17 @@ header::after {
 	top: 0;
 	left: 0;
 	width: 100%;
-	height: 22rem;
-	background: rgba(0, 0, 0, 0);
+	height: 24rem;
+	background: rgba(0, 0, 0, 0.3);
 	-webkit-box-shadow: inset 0px -91px 300px 47px rgba(0,0,0,1);
 -moz-box-shadow: inset 0px -91px 300px 47px rgba(0,0,0,1);
 box-shadow: inset 0px -91px 300px 47px rgba(0,0,0,1);
+}
+
+.first-section {
+	position: relative;
+	top: -7.5rem;
+	margin-bottom: -5rem;
 }
 
 ::-webkit-scrollbar {
