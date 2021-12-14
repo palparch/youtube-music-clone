@@ -7,8 +7,12 @@ body {
 	box-sizing: border-box;
 }
 
+h1, h2, h3 {
+	font-family: 'Open Sans', sans-serif;
+}
+
 header {
-	padding-bottom: 20rem;
+	padding-bottom: 24rem;
 	background-image: url("images/pixelated-sunset.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -18,20 +22,22 @@ header {
 header::after {
 	content: '';
 	position: absolute;
+	margin-left: -4rem;
+	margin-right: -4rem;
 	top: 0;
 	left: 0;
-	width: 100%;
-	height: 24rem;
+	width: 120%;
+	height: 28rem;
 	background: rgba(0, 0, 0, 0.3);
-	-webkit-box-shadow: inset 0px -91px 300px 47px rgba(0,0,0,1);
--moz-box-shadow: inset 0px -91px 300px 47px rgba(0,0,0,1);
-box-shadow: inset 0px -91px 300px 47px rgba(0,0,0,1);
+	-webkit-box-shadow: inset 0px -103px 300px 0px rgba(0,0,0,1);
+	-moz-box-shadow: inset 0px -103px 300px 0px rgba(0,0,0,1);
+	box-shadow: inset 0px -103px 300px 0px rgba(0,0,0,1);
 }
 
 .first-section {
 	position: relative;
-	top: -7.5rem;
-	margin-bottom: -5rem;
+	top: -14rem;
+	margin-bottom: -5rem !important;
 }
 
 ::-webkit-scrollbar {
@@ -72,11 +78,13 @@ navbar button {
 }
 
 section {
+	padding-left: 4vw;
+	padding-right: 4vw;
 	overflow-x: auto;
 }
 
 .albums-showcase div {
-	margin: 0 0.5rem 0 0.5rem;
+	margin-right: 1rem;
 	cursor: pointer;
 }
 
@@ -89,6 +97,7 @@ section {
 .albums-showcase img {
 	width: 12.5rem;
 	height: 12.5rem;
+	border-radius: 5px;
 	display: block;
 }
 
@@ -106,6 +115,10 @@ navbar ul {
 
 navbar li {
 	float: left;
+}
+
+navbar .mid-btns {
+	margin: 0 auto;
 }
 
 navbar li a {
