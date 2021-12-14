@@ -12,8 +12,8 @@ h1, h2, h3 {
 }
 
 header {
-	padding-bottom: 24rem;
-	background-image: url("images/pixelated-sunset.jpg");
+	padding-bottom: 26rem;
+	background-image: url("images/banners/banner-shells-blue-wood.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	/*box-shadow: inset 120px 150px 110px #000;*/
@@ -27,7 +27,7 @@ header::after {
 	top: 0;
 	left: 0;
 	width: 120%;
-	height: 28rem;
+	height: 30rem;
 	background: rgba(0, 0, 0, 0.3);
 	-webkit-box-shadow: inset 0px -103px 300px 0px rgba(0,0,0,1);
 	-moz-box-shadow: inset 0px -103px 300px 0px rgba(0,0,0,1);
@@ -36,8 +36,8 @@ header::after {
 
 .first-section {
 	position: relative;
-	top: -14rem;
-	margin-bottom: -5rem !important;
+	top: -15rem;
+	margin-bottom: -13rem !important;
 }
 
 ::-webkit-scrollbar {
