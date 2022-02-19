@@ -48,31 +48,6 @@ scrollbar {
 	display: none;
 }
 
-navbar, .login-button {
-	position: relative;
-	z-index: 2;
-}
-
-navbar button {
-	color: white;
-	background: none;
-	border: none;
-	padding: 0;
-}
-
-.float-right {
-	position: relative;
-	float: right;
-}
-
-.login-button {
-	float: right;
-	color: #000;
-	background-color: #fff;
-	padding: 0.5rem;
-}
-
-
 .albums-showcase {
 	display: inline-flex;
 }
@@ -88,10 +63,9 @@ section {
 	cursor: pointer;
 }
 
-.albums-showcase div:hover {
-	/*box-shadow: inset 120px 150px 110px #000;
-	-webkit-box-shadow: 0 0 10px #fff;
-	box-shadow: 0 0 10px #fff;*/
+.albums-showcase div img:hover {
+	transition-duration: 0.1s;
+	opacity: 0.7;
 }
 
 .albums-showcase img {
@@ -133,10 +107,23 @@ navbar li a:hover {
 	background-color: #111;
 }
 
+navbar .mid-btns {
+	position: absolute;
+	left: 40%;
+	right: 40%;
+	width: 100%;
+}
+
+navbar .last-btns {
+	position: sticky;
+	right: 0;
+	width: 100%;
+}
+
 /* Colour Palette:
- * Black:	#363636		(54,54,54)
+ * Black:		#363636		(54,54,54)
  * Light Black: #3f4042		(63,64,66)
- * Red:		#c3352e		(195,53,46)
- * Dark Red;	#ac362e		(172,54,46)
- * White: 	#ffffff		(255,255,255)
+ * Red:			#c3352e		(195,53,46)
+ * Dark Red:	#ac362e		(172,54,46)
+ * White:		#ffffff		(255,255,255)
 */
