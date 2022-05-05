@@ -16,7 +16,6 @@ header {
 	background-image: url("images/banners/banner-shells-blue-wood.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
-	/*box-shadow: inset 120px 150px 110px #000;*/
 }
 
 header::after {
