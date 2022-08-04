@@ -1,0 +1,113 @@
+$color-white: #fff;
+$color-black: #000;
+$color-black-light: #363636;
+$color-grey: #3f4042;
+$color-red: #c3352e;
+$color-red-dark: #ac362e;
+
+body {
+	color: $color-white;
+	overflow-x: hidden;
+	margin: 0;
+	background-color: $color-black;
+	font-family: 'Karla', sans-serif;
+	box-sizing: border-box;
+}
+
+h1, h2, h3 {
+	font-family: 'Open Sans', sans-serif;
+}
+
+header {
+	padding-bottom: 26rem;
+	background-image: url("images/banners/banner-shells-blue-wood.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	&::after {
+		content: '';
+		position: absolute;
+		margin-left: -4rem;
+		margin-right: -4rem;
+		top: 0;
+		left: 0;
+		width: 120%;
+		height: 30rem;
+		background-color: rgba(0, 0, 0, 0.3);
+		// -webkit-box-shadow: inset 0px 1rem 300px 0px rgba(0,0,0,1);
+		// -moz-box-shadow: inset 0px 1rem 300px 0px rgba(0,0,0,1);
+		box-shadow: inset 0rem -5rem 5rem 5rem rgba(0,0,0,1);
+	}
+}
+
+nav {
+	display: flex;
+
+	a {
+		font-family: 'Open Sans', sans-serif;
+		padding: 1rem;
+		color: $color-white;
+		z-index: 3;
+		font-weight: 600;
+		text-decoration: none;
+	
+		&:nth-child(2),
+		&:nth-child(5) {
+			margin-left: auto;
+		}
+	}
+}
+
+.first-section {
+	position: relative;
+	top: -15rem;
+	margin-bottom: -13rem !important;
+}
+
+::-webkit-scrollbar {
+	display: none;
+}
+
+scrollbar {
+	display: none;
+}
+
+.albums-showcase {
+	display: grid;
+	gap: 1rem;
+	grid-template-columns: repeat(auto-fill, minmax(10rem, 2fr));
+	grid-auto-flow: column;
+	grid-auto-columns: minmax(10rem, 1fr);
+	overflow-x: auto;
+
+	div {
+		cursor: pointer;
+	} 
+	
+	img {
+		// width: 12.5rem;
+		// height: 12.5rem;
+		width: 100%;
+		border-radius: 5px;
+		display: block;
+
+		&:hover {
+			transition-duration: 0.1s;
+			opacity: 0.7;
+		}
+	}
+}
+
+section {
+	padding-left: 4vw;
+	padding-right: 4vw;
+	overflow-x: auto;
+}
+
+/* Colour Palette:
+ * Black:		#363636		(54,54,54)
+ * Light Black: #3f4042		(63,64,66)
+ * Red:			#c3352e		(195,53,46)
+ * Dark Red:	#ac362e		(172,54,46)
+ * White:		#ffffff		(255,255,255)
+*/
